@@ -99,7 +99,7 @@ class SnakeGameClass:
         return imgMain
 
 
-game = SnakeGameClass("Donut.png")
+game = SnakeGameClass("\images\Donut.png")
 
 while True:
     success, img = cap.read()
