@@ -21,7 +21,7 @@ class SnakeGameClass:
         self.previousHead = 0, 0  # previous head point
 
         self.imgFood = cv2.imread(pathFood, cv2.IMREAD_UNCHANGED)
-        self.hFood, self.wFood, _ = self.imgFood.shape
+        self.hFood, self.wFood, _ = self.imgFood.shape()
         self.foodPoint = 0, 0
         self.randomFoodLocation()
 
@@ -96,7 +96,7 @@ class SnakeGameClass:
                 self.previousHead = 0, 0  # previous head point
                 self.randomFoodLocation()
 
-        return imgMain
+        return imgMain()
 
 
 game = SnakeGameClass("\images\Donut.png")
